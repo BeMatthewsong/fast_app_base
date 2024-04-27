@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+final emptyExpanded = EmptyExpanded();
+
 class EmptyExpanded extends StatelessWidget {
   final int flex;
 
