@@ -42,7 +42,7 @@ class _TtossAppBarState extends State<TtossAppBar> {
               child: Container(
                 width: 6,
                 height: 6,
-                decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.red),
+                decoration: const BoxDecoration(shape: BoxShape.circle, color: Colors.red),
               ),
             ))
           ]),
