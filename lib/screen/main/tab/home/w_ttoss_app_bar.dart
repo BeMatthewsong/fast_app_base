@@ -16,6 +16,7 @@ class _TtossAppBarState extends State<TtossAppBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(left: 10, right: 25),
       color: context.appColors.appBarBackground,
       height: TtossAppBar.appBarHeight,
       child: Row(
