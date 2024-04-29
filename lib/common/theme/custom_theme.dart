@@ -25,7 +25,8 @@ enum CustomTheme {
       case CustomTheme.dark:
         return darkTheme;
       case CustomTheme.light:
-        return lightTheme;
+        // return lightTheme;
+        return darkTheme;
     }
   }
 }
@@ -37,7 +38,8 @@ ThemeData lightTheme = ThemeData(
     // textTheme: CustomGoogleFonts.diphylleiaTextTheme(
     //   ThemeData(brightness: Brightness.light).textTheme,
     // ),
-    colorScheme: ColorScheme.fromSeed(seedColor: CustomTheme.light.appColors.seedColor));
+    colorScheme:
+        ColorScheme.fromSeed(seedColor: CustomTheme.light.appColors.seedColor));
 
 const darkColorSeed = Color(0xbcd5ff7e);
 ThemeData darkTheme = ThemeData(
@@ -48,5 +50,4 @@ ThemeData darkTheme = ThemeData(
     // textTheme: GoogleFonts.nanumMyeongjoTextTheme(
     //   ThemeData(brightness: Brightness.dark).textTheme,
     // ),
-    colorScheme: ColorScheme.fromSeed(
-        seedColor: CustomTheme.dark.appColors.seedColor, brightness: Brightness.dark));
+    colorScheme: const ColorScheme.dark(background: AppColors.veryDarkGrey));
