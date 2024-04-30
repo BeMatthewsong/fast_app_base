@@ -1,5 +1,6 @@
 import 'package:fast_app_base/common/common.dart';
 import 'package:fast_app_base/common/constants.dart';
+import 'package:fast_app_base/screen/main/tab/stock/search/s_search_stock.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../common/widget/w_image_button.dart';
@@ -37,7 +38,9 @@ class _StockFragmentState extends State<StockFragment>
               height: 26,
               padding: const EdgeInsets.all(10),
               imagePath: '$basePath/icon/stock_search.png',
-              onTap: () {},
+              onTap: () {
+                Nav.push(SearchStockScreen());
+              },
             ),
             ImageButton(
               width: 26,

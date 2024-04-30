@@ -6,7 +6,7 @@ class Stock extends PopularStock {
   Stock({
     required super.yesterdayClosePrice,
     required super.currentPrice,
-    required super.stockName,
+    required super.name,
     required this.stockImagePath,
   });
 }
